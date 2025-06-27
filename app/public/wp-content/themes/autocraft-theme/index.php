@@ -7,8 +7,6 @@ get_header();
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1><?php bloginfo('name'); ?></h1>
-                <p><?php bloginfo('description'); ?></p>
                 <a href="#contact" class="cta-button">Gauti Pasiūlymą</a>
             </div>
         </div>
@@ -18,36 +16,60 @@ get_header();
         <div class="container">
             <h2 class="section-title">Mūsų Paslaugos</h2>
             <div class="services-grid">
-                <!-- Example service cards, replace with dynamic content if needed -->
                 <div class="service-card">
-                    <div class="service-icon">✨</div>
-                    <h3>Dažų Korekcija</h3>
-                    <p>Profesionali dažų korekcija, pašalinanti įbrėžimus ir atkuriantį originalų automobilio blizgesį.</p>
+                    <div class="service-icon">🔥</div>
+                    <h3>1 Etapo poliravimas</h3>
+                    <p>Vieno etapo poliravimas – greitas ir efektyvus būdas atnaujinti automobilio blizgesį, pašalinti smulkius įbrėžimus ir suteikti paviršiui gaivų spindesį.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Keramikos Danga</h3>
-                    <p>Ilgalaikė apsauga su aukščiausios kokybės keramikos danga, suteikiančia puikų blizgesį ir atsparumą.</p>
+                    <div class="service-icon">🔥</div>
+                    <h3>2 Etapų poliravimas</h3>
+                    <p>Du poliravimo etapai leidžia pašalinti gilesnius įbrėžimus ir atkurti dažų sluoksnio gylį, užtikrinant ilgalaikį automobilio grožį.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔥</div>
+                    <h3>3 Etapų poliravimas</h3>
+                    <p>Trys poliravimo etapai – maksimalus rezultatas, kai pašalinami net ir sudėtingiausi defektai, o paviršius tampa nepriekaištingai lygus ir blizgus.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Detalės šlifavimas</h3>
+                    <p>Detalės šlifavimas – individualių automobilio detalių atnaujinimas, pašalinant pažeidimus ir atkuriant jų išvaizdą.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⭐</div>
+                    <h3>Keraminė danga iki 12mėn</h3>
+                    <p>Keraminė danga iki 12 mėn. – trumpalaikė, bet efektyvi apsauga nuo aplinkos poveikio ir lengvesnė automobilio priežiūra.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⭐</div>
+                    <h3>Keraminė danga iki 36mėn</h3>
+                    <p>Keraminė danga iki 36 mėn. – ilgalaikė apsauga, kuri išlaiko automobilio blizgesį ir saugo dažus nuo pažeidimų.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⭐</div>
+                    <h3>Nano danga stiklams</h3>
+                    <p>Nano danga stiklams – apsaugo stiklus nuo vandens, purvo ir pagerina matomumą bet kokiomis oro sąlygomis.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🧽</div>
-                    <h3>Salono Detailing</h3>
-                    <p>Visiškas salono valymas ir kondicionavimas odai, audiniams ir visoms salono paviršiams.</p>
+                    <h3>Cheminis salono valymas</h3>
+                    <p>Cheminis salono valymas – giluminis salono valymas, pašalinantis dėmes, kvapus ir atnaujinantis vidaus apdailą.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💎</div>
-                    <h3>Aukščiausios Kokybės Poliravimas</h3>
-                    <p>Daugiapakopis poliravimo procesas naudojant profesionalius įrankius ir priemones.</p>
+                    <div class="service-icon">🧽</div>
+                    <h3>Sausas salono valymas</h3>
+                    <p>Sausas salono valymas – greitas ir saugus būdas atnaujinti saloną be papildomos drėgmės.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🚗</div>
-                    <h3>Visiškas Detailing</h3>
-                    <p>Pilnas išorės ir salono detailing paketas aukščiausiai automobilių priežiūros kokybei.</p>
+                    <div class="service-icon">🧽</div>
+                    <h3>Vaikiškos kėdutės valymas</h3>
+                    <p>Vaikiškos kėdutės valymas – kruopštus ir saugus valymas, užtikrinantis higieną ir komfortą vaikams.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🧴</div>
-                    <h3>Vaškas ir Apsauga</h3>
-                    <p>Aukštos kokybės vaško taikymas ir apsauginiai apdorojimai automobilių išvaizdai išlaikyti.</p>
+                    <div class="service-icon">🧽</div>
+                    <h3>Lubų valymas</h3>
+                    <p>Lubų valymas – papildoma paslauga, kurios kaina derinama individualiai pagal poreikius.</p>
                 </div>
             </div>
         </div>
@@ -127,7 +149,7 @@ get_header();
                     <h3>Užsakyti Pasiūlymą</h3>
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'], $_POST['email'])) {
-                        $to = 'Viliusg94@gmail.com';
+                        $to = 'info@autocraft.lt';
                         $subject = 'Nauja užklausa iš AutoCraft svetainės';
                         $headers = array();
                         $headers[] = 'Content-Type: text/html; charset=UTF-8';
@@ -137,12 +159,18 @@ get_header();
                         $email = sanitize_email($_POST['email']);
                         $phone = sanitize_text_field($_POST['phone']);
                         $service = sanitize_text_field($_POST['service']);
+                        $parts = isset($_POST['parts']) ? intval($_POST['parts']) : '';
                         $message = nl2br(esc_html($_POST['message']));
                         $body = "<strong>Vardas:</strong> $name<br>"
                               . "<strong>El. paštas:</strong> $email<br>"
                               . "<strong>Telefonas:</strong> $phone<br>"
                               . "<strong>Paslauga:</strong> $service<br>"
                               . "<strong>Žinutė:</strong><br>$message";
+                        if ($service === 'Detalės šlifavimas' && $parts) {
+                            $body = "<strong>Paslauga:</strong> $service<br><strong>Detalių kiekis:</strong> $parts<br>" . $body;
+                        } else {
+                            $body = "<strong>Paslauga:</strong> $service<br>" . $body;
+                        }
                         $mail_sent = wp_mail($to, $subject, $body, $headers);
                         if ($mail_sent) {
                             echo '<script>alert("Jūsų užklausa išsiųsta sėkmingai!");</script>';
@@ -165,17 +193,26 @@ get_header();
                             <input type="tel" id="phone" name="phone">
                         </div>
                         <div class="form-group">
-                            <label for="service">Reikalinga Paslauga</label>
-                            <select id="service" name="service">
-                                <option value="">Pasirinkite paslaugą</option>
-                                <option value="paint-correction">Dažų Korekcija</option>
-                                <option value="ceramic-coating">Keramikos Danga</option>
-                                <option value="interior-detailing">Salono Detailing</option>
-                                <option value="premium-polishing">Aukščiausios Kokybės Poliravimas</option>
-                                <option value="full-detailing">Visiškas Detailing</option>
-                                <option value="wax-protection">Vaškas ir Apsauga</option>
-                                <option value="other">Kita</option>
+                            <label for="service">Paslauga *</label>
+                            <select id="service" name="service" required onchange="togglePartsField(this.value)">
+                                <option value="">-- Pasirinkite paslaugą --</option>
+                                <option value="1 Etapo poliravimas">🔥 1 Etapo poliravimas</option>
+                                <option value="2 Etapų poliravimas">🔥 2 Etapų poliravimas</option>
+                                <option value="3 Etapų poliravimas">🔥 3 Etapų poliravimas</option>
+                                <option value="Detalės šlifavimas">Detalės šlifavimas</option>
+                                <option value="Keraminė danga iki 12mėn">⭐ Keraminė danga iki 12mėn</option>
+                                <option value="Keraminė danga iki 36mėn">⭐ Keraminė danga iki 36mėn</option>
+                                <option value="Nano danga stiklams">⭐ Nano danga stiklams</option>
+                                <option value="Cheminis salono valymas">🧽 Cheminis salono valymas</option>
+                                <option value="Sausas salono valymas">🧽 Sausas salono valymas</option>
+                                <option value="Vaikiškos kėdutės valymas">🧽 Vaikiškos kėdutės valymas</option>
+                                <option value="Lubų valymas">🧽 Lubų valymas</option>
+                                <option value="Kita">Kita</option>
                             </select>
+                        </div>
+                        <div class="form-group" id="partsField" style="display:none;">
+                            <label for="parts">Detalių kiekis</label>
+                            <input type="number" id="parts" name="parts" min="1" placeholder="Įveskite detalių kiekį">
                         </div>
                         <div class="form-group">
                             <label for="message">Žinutė</label>
@@ -195,6 +232,22 @@ get_header();
       <button class="carousel-modal-btn prev">&#10094;</button>
       <button class="carousel-modal-btn next">&#10095;</button>
     </div>
+
+    <!-- Google Reviews Section -->
+    <section class="google-reviews-section" style="background:#181c22;padding:48px 0 32px 0;margin:0;">
+        <div class="container" style="max-width:900px;margin:0 auto;text-align:center;">
+            <h2 class="section-title" style="margin-bottom:28px;">Klientų atsiliepimai</h2>
+            <!-- Google Reviews Widget START -->
+            <div id="google-reviews-widget" style="display:flex;justify-content:center;align-items:center;">
+                <?php // Replace the shortcode below with the one provided by your Google reviews plugin (e.g., Trustindex, RichPlugins, etc.)
+                echo do_shortcode('[trustindex no-registration=google]');
+                ?>
+            </div>
+            <div style="margin-top:18px;">
+                <a href="https://search.google.com/local/reviews?placeid=ChIJvwHEN0Tj5UYRkt2J9gCsLTA" target="_blank" rel="noopener" style="color:#ffb347;font-weight:600;text-decoration:underline;">Peržiūrėti daugiau atsiliepimų Google</a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>
@@ -262,6 +315,21 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.key === 'Escape') modalClose.click();
         }
     });
+});
+
+function togglePartsField(val) {
+    var pf = document.getElementById('partsField');
+    if(val === 'Detalės šlifavimas') {
+        pf.style.display = 'block';
+        document.getElementById('parts').required = true;
+    } else {
+        pf.style.display = 'none';
+        document.getElementById('parts').required = false;
+    }
+}
+window.addEventListener('DOMContentLoaded', function() {
+    var sel = document.getElementById('service');
+    if(sel) togglePartsField(sel.value);
 });
 </script>
 

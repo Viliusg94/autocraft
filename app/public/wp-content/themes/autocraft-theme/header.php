@@ -19,10 +19,9 @@
             <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="<?php echo home_url(); ?>#home">Pradžia</a></li>
-                <li><a href="<?php echo home_url(); ?>#services">Paslaugos</a></li>
-                <li><a href="<?php echo site_url('/apie-mus'); ?>">Apie mus</a></li>
-                <li><a href="<?php echo home_url(); ?>#contact">Kontaktai</a></li>
+                <li><a href="<?php echo site_url('/paslaugos'); ?>">Paslaugos</a></li>
                 <li><a href="<?php echo site_url('/galerija'); ?>">Galerija</a></li>
+                <li><a href="<?php echo site_url('/kontaktai'); ?>">Kontaktai</a></li>
             </ul>
         </nav>
     </header>

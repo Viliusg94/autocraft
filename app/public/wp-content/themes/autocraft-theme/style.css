@@ -52,93 +52,89 @@ header {
 }
 
 .hero {
-    background: var(--main-futuristic);
-    color: #fff;
-    min-height: 420px;
-    padding: 100px 0 80px 0;
-    text-align: center;
-    box-shadow: none;
+    background: url('images/table.jpg') center center/cover no-repeat;
+    min-height: 320px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     position: relative;
     border-bottom: 2px solid var(--main-accent-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url('images/logo.jpg') center center/40vw no-repeat;
-    opacity: 0.12;
-    z-index: 0;
-    pointer-events: none;
+    box-shadow: none;
+    text-align: center;
 }
 
 .hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(16,19,26,0.96);
+    background: rgba(16,19,26,0.32); /* Lower opacity for sharper image */
     z-index: 1;
     pointer-events: none;
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    top: 75%; /* 3/4 from the top */
+    transform: translateY(-50%);
     z-index: 2;
-    backdrop-filter: blur(1px);
-    background: rgba(20,22,27,0.98);
-    border-radius: 18px;
+    background: none;
     box-shadow: none;
-    padding: 32px 24px;
-    max-width: 600px;
-    margin: auto;
+    border-radius: 0;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
-.hero-content h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    margin-bottom: 18px;
-    letter-spacing: 2px;
-    color: var(--main-accent);
-    text-shadow: none;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-}
-
+.hero-content h1,
 .hero-content p {
-    font-size: 1.3rem;
-    margin-bottom: 32px;
-    color: #b0b8c1;
-    text-shadow: none;
+    display: none;
 }
 
 .cta-button {
-    background: url('images/logo.jpg') center/cover no-repeat, var(--main-accent);
-    color: #fff;
-    padding: 16px 38px;
+    background: linear-gradient(90deg, var(--main-accent-dark) 0%, var(--main-accent) 100%);
+    color: #181c22;
+    padding: 18px 44px;
     border: none;
     border-radius: 30px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
-    box-shadow: none;
+    box-shadow: 0 4px 24px #0006;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     text-decoration: none;
     position: relative;
-    z-index: 1;
-    background-blend-mode: multiply;
+    z-index: 2;
     outline: 2px solid var(--main-accent-dark);
     outline-offset: 2px;
     text-shadow: none;
+    margin: 0;
+    display: inline-block;
 }
 
 .cta-button:hover {
-    background: url('images/logo.jpg') center/cover no-repeat, var(--main-accent-dark);
+    background: var(--main-accent-dark);
     color: #fff;
-    box-shadow: none;
+}
+
+/* Google reviews plugin section fix */
+.google-reviews-section {
+    background: #181c22;
+    padding: 48px 0 32px 0;
+    margin: 0;
+}
+#google-reviews-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
 }
 
 .section-title {
@@ -294,6 +290,37 @@ header {
         cursor: pointer;
         z-index: 1001;
     }
+    .contact-content {
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 32px;
+    }
+    .contact-form,
+    .contact-info,
+    .contact-map {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        max-width: 98vw !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    .contact-form {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+    .contact-form form {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .contact-map iframe {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 600px) {
@@ -322,6 +349,15 @@ header {
     }
     .carousel-img {
         height: 160px;
+    }
+    .contact-content {
+        gap: 18px;
+    }
+    .contact-form,
+    .contact-info,
+    .contact-map {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
     }
 }
 

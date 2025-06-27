@@ -13,8 +13,11 @@ get_header(); ?>
                 <?php
                 // Get all images from the theme's images folder used in the carousel
                 $gallery_images = glob(get_template_directory() . '/images/*.{jpg,jpeg,png,gif,webp}', GLOB_BRACE);
+                $exclude = ['logo.png', 'logo.jpg', 'table.jpg'];
                 foreach ($gallery_images as $idx => $img) {
-                    $img_url = get_template_directory_uri() . '/images/' . basename($img);
+                    $basename = basename($img);
+                    if (in_array($basename, $exclude)) continue;
+                    $img_url = get_template_directory_uri() . '/images/' . $basename;
                     echo '<div class="gallery-item">';
                     echo '<img src="' . esc_url($img_url) . '" alt="Galerijos nuotrauka" class="gallery-img" data-idx="' . $idx . '" style="cursor:zoom-in;transition:transform 0.2s;">';
                     echo '</div>';

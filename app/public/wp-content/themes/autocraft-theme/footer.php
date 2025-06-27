@@ -7,7 +7,6 @@
         <ul class="footer-links">
             <li><a href="#home">Pradžia</a></li>
             <li><a href="#services">Paslaugos</a></li>
-            <li><a href="#about">Apie mus</a></li>
             <li><a href="#contact">Kontaktai</a></li>
             <li><a href="<?php echo home_url('/gallery'); ?>">Galerija</a></li>
         </ul>

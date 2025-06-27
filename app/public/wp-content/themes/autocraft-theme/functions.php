@@ -19,7 +19,7 @@ function autocraft_register_gallery_post_type() {
         'public' => true,
         'has_archive' => true,
         'supports' => array('title', 'editor', 'thumbnail'),
-        'rewrite' => array('slug' => 'gallery'),
+        'rewrite' => array('slug' => 'autocraft-gallery'), // changed from 'gallery' to avoid conflict
     );
     register_post_type('gallery', $args);
 }

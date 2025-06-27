@@ -20,9 +20,9 @@
             <ul class="nav-links">
                 <li><a href="<?php echo home_url(); ?>#home">Pradžia</a></li>
                 <li><a href="<?php echo home_url(); ?>#services">Paslaugos</a></li>
-                <li><a href="<?php echo home_url(); ?>#about">Apie mus</a></li>
+                <li><a href="<?php echo site_url('/apie-mus'); ?>">Apie mus</a></li>
                 <li><a href="<?php echo home_url(); ?>#contact">Kontaktai</a></li>
-                <li><a href="<?php echo site_url('/gallery'); ?>">Galerija</a></li>
+                <li><a href="<?php echo site_url('/galerija'); ?>">Galerija</a></li>
             </ul>
         </nav>
     </header>

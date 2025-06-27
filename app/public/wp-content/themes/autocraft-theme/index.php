@@ -127,10 +127,12 @@ get_header();
                     <h3>Užsakyti Pasiūlymą</h3>
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'], $_POST['email'])) {
-                        $to = 'viliusg94@gmail.com';
+                        $to = 'Viliusg94@gmail.com';
                         $subject = 'Nauja užklausa iš AutoCraft svetainės';
-                        $headers = "Content-Type: text/html; charset=UTF-8\r\n";
-                        $headers .= 'From: AutoCraft <no-reply@' . $_SERVER['HTTP_HOST'] . ">\r\n";
+                        $headers = array();
+                        $headers[] = 'Content-Type: text/html; charset=UTF-8';
+                        $headers[] = 'From: AutoCraft <no-reply@autocraft.local>';
+                        $headers[] = 'Reply-To: ' . sanitize_email($_POST['email']);
                         $name = sanitize_text_field($_POST['name']);
                         $email = sanitize_email($_POST['email']);
                         $phone = sanitize_text_field($_POST['phone']);
@@ -141,8 +143,12 @@ get_header();
                               . "<strong>Telefonas:</strong> $phone<br>"
                               . "<strong>Paslauga:</strong> $service<br>"
                               . "<strong>Žinutė:</strong><br>$message";
-                        wp_mail($to, $subject, $body, $headers);
-                        echo '<div class="form-success" style="color:var(--main-accent);margin-bottom:16px;">Jūsų užklausa išsiųsta sėkmingai!</div>';
+                        $mail_sent = wp_mail($to, $subject, $body, $headers);
+                        if ($mail_sent) {
+                            echo '<script>alert("Jūsų užklausa išsiųsta sėkmingai!");</script>';
+                        } else {
+                            echo '<script>alert("Nepavyko išsiųsti užklausos. Bandykite dar kartą vėliau.");</script>';
+                        }
                     }
                     ?>
                     <form id="contactForm" method="post">

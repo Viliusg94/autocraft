@@ -92,6 +92,10 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 }
 
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
+define('WP_MAIL_SMTP_HOST', '127.0.0.1');
+define('WP_MAIL_SMTP_PORT', 1025);
+define('WP_MAIL_SMTP_AUTH', false);
+define('WP_MAIL_SMTP_SECURE', null);
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

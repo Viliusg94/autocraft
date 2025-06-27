@@ -23,7 +23,7 @@ get_header(); ?>
                     <h3>Susisiekite su mumis</h3>
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'], $_POST['email'])) {
-                        $to = 'info@autocraft.lt';
+                        $to = 'viliusg94@gmail.com';
                         $subject = 'Nauja užklausa iš AutoCraft svetainės';
                         $headers = array();
                         $headers[] = 'Content-Type: text/html; charset=UTF-8';
@@ -34,6 +34,12 @@ get_header(); ?>
                         $phone = sanitize_text_field($_POST['phone']);
                         $service = sanitize_text_field($_POST['service']);
                         $parts = isset($_POST['parts']) ? intval($_POST['parts']) : '';
+                        $message = nl2br(esc_html($_POST['message']));
+                        $body = "<strong>Vardas:</strong> $name<br>"
+                              . "<strong>El. paštas:</strong> $email<br>"
+                              . "<strong>Telefonas:</strong> $phone<br>"
+                              . "<strong>Paslauga:</strong> $service<br>"
+                              . "<strong>Žinutė:</strong><br>$message";
                         if ($service === 'Detalės šlifavimas' && $parts) {
                             $body = "<strong>Paslauga:</strong> $service<br><strong>Detalių kiekis:</strong> $parts<br>" . $body;
                         } else {

@@ -149,7 +149,7 @@ get_header();
                     <h3>Užsakyti Pasiūlymą</h3>
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'], $_POST['email'])) {
-                        $to = 'info@autocraft.lt';
+                        $to = 'viliusg94@gmail.com';
                         $subject = 'Nauja užklausa iš AutoCraft svetainės';
                         $headers = array();
                         $headers[] = 'Content-Type: text/html; charset=UTF-8';

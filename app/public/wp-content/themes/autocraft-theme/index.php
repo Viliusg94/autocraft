@@ -7,69 +7,93 @@ get_header();
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <a href="#contact" class="cta-button">Gauti Pasiūlymą</a>
+                <a href="#contact" class="cta-button">Gauti pasiūlymą</a>
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Mūsų Paslaugos</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔥</div>
-                    <h3>1 Etapo poliravimas</h3>
-                    <p>Vieno etapo poliravimas – greitas ir efektyvus būdas atnaujinti automobilio blizgesį, pašalinti smulkius įbrėžimus ir suteikti paviršiui gaivų spindesį.</p>
+            <h2 class="section-title">Mūsų paslaugos</h2>
+            
+            <!-- Poliravimas Category -->
+            <div class="service-category" style="margin-bottom: 48px;">
+                <h3 class="category-title" style="color:#ffb347;font-size:1.8rem;margin-bottom:24px;text-align:center;border-bottom:2px solid #ffb347;padding-bottom:8px;">🔥 Poliravimas</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔥</div>
+                        <h3>1 Etapo poliravimas</h3>
+                        <p>Vieno etapo poliravimas – greitas ir efektyvus būdas atnaujinti automobilio blizgesį, pašalinti smulkius įbrėžimus ir suteikti paviršiui gaivų spindesį.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔥</div>
+                        <h3>2 Etapų poliravimas</h3>
+                        <p>Dviejų etapų poliravimas – tai išsamus automobilio paviršiaus atnaujinimas, užtikrinantis stiprų blizgesį ir defektų pašalinimą.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔥</div>
+                        <h3>3 Etapų poliravimas</h3>
+                        <p>Trijų etapų poliravimas – tai profesionalus paviršiaus atnaujinimas, užtikrinantis maksimalų įbrėžimų pašalinimą, spalvos gylį ir ilgalaikį blizgesį.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Detalės šlifavimas</h3>
+                        <p>Detalių šlifavimas – kruopštus paviršiaus paruošimas, pašalinant nelygumus, apelsino efektą ar smulkius defektus, dažniausiai atliekamas po nekokybiško dažymo.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔥</div>
-                    <h3>2 Etapų poliravimas</h3>
-                    <p>Du poliravimo etapai leidžia pašalinti gilesnius įbrėžimus ir atkurti dažų sluoksnio gylį, užtikrinant ilgalaikį automobilio grožį.</p>
+            </div>
+
+            <!-- Keraminė / Nano danga Category -->
+            <div class="service-category" style="margin-bottom: 48px;">
+                <h3 class="category-title" style="color:#ffb347;font-size:1.8rem;margin-bottom:24px;text-align:center;border-bottom:2px solid #ffb347;padding-bottom:8px;">⭐ Keraminė / Nano danga</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">⭐</div>
+                        <h3>Keraminė danga iki 12mėn</h3>
+                        <p>Keraminė danga iki 12 mėn. – trumpalaikė, bet efektyvi apsauga nuo aplinkos poveikio ir lengvesnė automobilio priežiūra.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⭐</div>
+                        <h3>Keraminė danga iki 36mėn</h3>
+                        <p>Keraminė danga iki 36 mėn. – ilgalaikė apsauga, kuri išlaiko automobilio blizgesį ir saugo dažus nuo pažeidimų.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⭐</div>
+                        <h3>Nano danga stiklams</h3>
+                        <p>Nano danga stiklams – plonas, itin atsparus sluoksnis, kuris atstumia vandenį, nešvarumus ir net vabzdžių likučius. Pagerina matomumą, saugo nuo įbrėžimų ir palengvina langų valymą.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔥</div>
-                    <h3>3 Etapų poliravimas</h3>
-                    <p>Trys poliravimo etapai – maksimalus rezultatas, kai pašalinami net ir sudėtingiausi defektai, o paviršius tampa nepriekaištingai lygus ir blizgus.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛠️</div>
-                    <h3>Detalės šlifavimas</h3>
-                    <p>Detalės šlifavimas – individualių automobilio detalių atnaujinimas, pašalinant pažeidimus ir atkuriant jų išvaizdą.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⭐</div>
-                    <h3>Keraminė danga iki 12mėn</h3>
-                    <p>Keraminė danga iki 12 mėn. – trumpalaikė, bet efektyvi apsauga nuo aplinkos poveikio ir lengvesnė automobilio priežiūra.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⭐</div>
-                    <h3>Keraminė danga iki 36mėn</h3>
-                    <p>Keraminė danga iki 36 mėn. – ilgalaikė apsauga, kuri išlaiko automobilio blizgesį ir saugo dažus nuo pažeidimų.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⭐</div>
-                    <h3>Nano danga stiklams</h3>
-                    <p>Nano danga stiklams – apsaugo stiklus nuo vandens, purvo ir pagerina matomumą bet kokiomis oro sąlygomis.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🧽</div>
-                    <h3>Cheminis salono valymas</h3>
-                    <p>Cheminis salono valymas – giluminis salono valymas, pašalinantis dėmes, kvapus ir atnaujinantis vidaus apdailą.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🧽</div>
-                    <h3>Sausas salono valymas</h3>
-                    <p>Sausas salono valymas – greitas ir saugus būdas atnaujinti saloną be papildomos drėgmės.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🧽</div>
-                    <h3>Vaikiškos kėdutės valymas</h3>
-                    <p>Vaikiškos kėdutės valymas – kruopštus ir saugus valymas, užtikrinantis higieną ir komfortą vaikams.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🧽</div>
-                    <h3>Lubų valymas</h3>
-                    <p>Lubų valymas – papildoma paslauga, kurios kaina derinama individualiai pagal poreikius.</p>
+            </div>
+
+            <!-- Valymas Category -->
+            <div class="service-category" style="margin-bottom: 48px;">
+                <h3 class="category-title" style="color:#ffb347;font-size:1.8rem;margin-bottom:24px;text-align:center;border-bottom:2px solid #ffb347;padding-bottom:8px;">🧽 Valymas</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🧽</div>
+                        <h3>Cheminis salono valymas</h3>
+                        <p>Cheminis salono valymas – giluminis salono valymas, pašalinantis dėmes, kvapus ir atnaujinantis vidaus apdailą.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧽</div>
+                        <h3>Sausas salono valymas</h3>
+                        <p>Sausas salono valymas – greitas ir saugus būdas atnaujinti saloną be papildomos drėgmės.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧽</div>
+                        <h3>Vaikiškos kėdutės valymas</h3>
+                        <p>Vaikiškos kėdutės valymas – kruopštus ir saugus valymas, užtikrinantis higieną ir komfortą vaikams.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧽</div>
+                        <h3>Salono ozonavimas</h3>
+                        <p>Salono ozonavimas – tai dezinfekcija ozonu, kuri pašalina nemalonius kvapus ir bakterijas iš salono bei oro sistemos.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧽</div>
+                        <h3>Lubų valymas</h3>
+                        <p>Lubų valymas – papildoma paslauga, kurios kaina derinama individualiai pagal poreikius.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,9 +104,9 @@ get_header();
             <div class="about-content">
                 <div class="about-text">
                     <h2>Apie AutoCraft</h2>
-                    <p>Turėdami metų patirtį automobilių detailing srityje, AutoCraft Šiauliai teikia išskirtinius automobilio poliravimo ir detailing paslaugas. Naudojame tik aukščiausios kokybės produktus ir profesionalius metodus, kad jūsų automobilis atrodytų puikiai.</p>
-                    <p>Mūsų aistra tobulybei ir dėmesys detalėms mus išskiria iš kitų. Nesvarbu, ar jums reikia dažų korekcijos, keramikos dangos ar visiško detailing, mes kiekvieną automobilį traktuojame su rūpestingu ir tikslumu, kurio jis nusipelno.</p>
-                    <p>Įsikūrę Šiauliuose, aptarnaujame klientus visame regione tiek mūsų dirbtuvėse, tiek mobiliomis paslaugomis.</p>
+                    <p>Tavo automobilio išvaizda – mūsų prioritetas. AutoCraft nuo 2022 metų specializuojasi automobilių estetikos darbuose, kuriuose svarbiausia – kokybė, kruopštumas ir dėmesys detalėms.</p>
+                    <p>Kiekvienas automobilis, patekęs į mūsų rankas, gauna išskirtinį dėmesį ir precizišką priežiūrą. Dirbame tik su aukštos klasės priemonėmis, naudojame profesionalią įrangą, o darbus atlieka patyrusi komanda, kuri tikrai supranta, kaip automobilis turi atrodyti.</p>
+                    <p>Po mūsų darbo tavo automobilis vėl spindės ir kvepės – tarsi ką tik išriedėjęs iš salono.</p>
                 </div>
                 <div class="about-carousel">
                     <div class="carousel-wrapper">
@@ -105,15 +129,17 @@ get_header();
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Susisiekite su Mumis</h2>
+            <h2 class="section-title">Susisiekite su mumis</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Kaip su Mumis Susisiekti</h3>
+                    <h3>Kaip su mumis susisiekti</h3>
                     <div class="contact-item">
                         <i>📍</i>
                         <div>
                             <strong>Adresas:</strong><br>
-                            Užmiesčio g. 13, Šiauliai, Lithuania, 76273
+                            <a href="https://maps.app.goo.gl/TYqg2CmJec3km9UHA" target="_blank" rel="noopener" style="color:#ffb347;text-decoration:none;">
+                                Užmiesčio g. 13, Šiauliai, Lithuania, 76273
+                            </a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -140,13 +166,32 @@ get_header();
                         </div>
                     </div>
                     <div class="contact-map" style="margin-top:24px; border-radius:12px; overflow:hidden; box-shadow:0 2px 12px #0007;">
-                        <iframe
-                            src="https://www.google.com/maps?q=Užmiesčio+g.+13,+Šiauliai,+Lithuania,+76273&output=embed"
-                            width="100%" height="220" style="border:0; border-radius:12px; min-width:220px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="position:relative;">
+                            <iframe
+                                src="https://maps.google.com/maps?width=100%25&height=220&hl=en&q=Užmiesčio+g.+13,+Šiauliai,+Lithuania+(AutoCraft)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+                                width="100%" 
+                                height="220" 
+                                style="border:0; border-radius:12px; min-width:220px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <noscript>
+                                <div style="padding:20px; text-align:center; background:#222; border-radius:12px; color:#fff;">
+                                    <p style="margin:0; margin-bottom:10px;">Žemėlapis nepasiekiamas</p>
+                                    <a href="https://maps.app.goo.gl/TYqg2CmJec3km9UHA" 
+                                       target="_blank" 
+                                       rel="noopener" 
+                                       style="color:#ffb347; text-decoration:none; font-weight:600;">
+                                       📍 Peržiūrėti Google Maps
+                                    </a>
+                                </div>
+                            </noscript>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>Užsakyti Pasiūlymą</h3>
+                    <h3>Gauti pasiūlymą</h3>
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'], $_POST['email'])) {
                         $to = 'viliusg94@gmail.com';
@@ -378,5 +423,74 @@ window.addEventListener('DOMContentLoaded', function() {
 }
 .carousel-modal-btn.next {
   right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .contact-info, .contact-form {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto 24px auto !important;
+    box-sizing: border-box;
+  }
+  .contact-map {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+  }
+  .service-card {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto 18px auto !important;
+  }
+  .about-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .about-text, .about-carousel {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto 18px auto !important;
+  }
+  .google-reviews-section .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .contact-form .form-group {
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    text-align: left;
+  }
+  .contact-form label,
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .contact-form .submit-button {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 </style>

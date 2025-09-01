@@ -1,7 +1,7 @@
 <div class="footer">
     <div class="container">
         <div class="footer-logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="AutoCraft Logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="AutoCraft Logo">
             <span>AutoCraft</span>
         </div>
         <ul class="footer-links">

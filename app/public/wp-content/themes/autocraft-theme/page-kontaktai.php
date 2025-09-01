@@ -1,6 +1,7 @@
 <?php
 /*
-Template Name: Kontaktai
+Template                            <iframe 
+                                src="https://maps.google.com/maps?width=100%25&height=320&hl=en&q=Užmiesčio+g.+13,+Šiauliai,+Lithuania+(AutoCraft)&t=&z=16&ie=UTF8&iwloc=B&output=embed"ame: Kontaktai
 */
 
 get_header(); ?>
@@ -11,12 +12,33 @@ get_header(); ?>
             <div class="contact-content" style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;justify-content:flex-start;">
                 <div style="display:flex;flex-direction:column;gap:32px;flex:1 1 340px;min-width:320px;max-width:520px;">
                     <div class="contact-info" style="background:#181c22 !important;border-radius:18px;box-shadow:none;border:1.5px solid #23272f;color:var(--main-text);padding:32px 24px;">
-                        <p><strong>Adresas:</strong> Užmiesčio g. 13, Šiauliai, Lietuva</p>
+                        <p><strong>Adresas:</strong> <a href="https://maps.app.goo.gl/TYqg2CmJec3km9UHA" target="_blank" rel="noopener" style="color:#ffb347;text-decoration:none;">Užmiesčio g. 13, Šiauliai, Lietuva</a></p>
                         <p><strong>Telefonas:</strong> <a href="tel:+37066848977" style="color:#ffb347;">+370 668 48977</a></p>
                         <p><strong>El. paštas:</strong> <a href="mailto:info@autocraft.lt" style="color:#ffb347;">info@autocraft.lt</a></p>
                     </div>
                     <div class="contact-map" style="background:#181c22 !important;border-radius:18px;box-shadow:0 2px 16px #000a;border:1.5px solid #23272f;padding:0;display:flex;align-items:center;justify-content:center;">
-                        <iframe src="https://www.google.com/maps?q=Užmiesčio+g.+13,+Šiauliai,+Lithuania,+76273&output=embed" width="100%" height="320" style="border:0; border-radius:12px; min-width:220px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="position:relative; width:100%; height:320px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2271.3!2d23.3145!3d55.9324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e5e3b7e8d5f8c5%3A0x123456789!2sU%C5%BEmies%C4%8Dio%20g.%2013%2C%20%C5%A0iauliai%2C%20Lithuania!5e0!3m2!1sen!2slt!4v1693526400000!5m2!1sen!2slt"
+                                width="100%" 
+                                height="320" 
+                                style="border:0; border-radius:12px; min-width:220px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <noscript>
+                                <div style="width:100%; height:320px; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; background:#181c22; border-radius:12px; color:#fff;">
+                                    <p style="margin:0; margin-bottom:15px; font-size:1.1rem;">Žemėlapis nepasiekiamas</p>
+                                    <a href="https://maps.app.goo.gl/TYqg2CmJec3km9UHA" 
+                                       target="_blank" 
+                                       rel="noopener" 
+                                       style="color:#ffb347; text-decoration:none; font-weight:600; font-size:1.1rem;">
+                                       📍 Peržiūrėti Google Maps
+                                    </a>
+                                </div>
+                            </noscript>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form" style="flex:1 1 320px;min-width:320px;max-width:420px;background:#181c22 !important;border-radius:18px;box-shadow:0 2px 16px #000a;border:1.5px solid var(--main-accent);color:#e0e0e0;padding:32px 24px;display:flex;flex-direction:column;align-items:center;margin-left:auto;">

@@ -14,31 +14,71 @@ get_header(); ?>
                     Palikite atsiliepimą Google
                 </a>
             </div>
-            <div class="services-table-wrapper" style="overflow-x:auto;position:relative;">
-                <div style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.22;background:url('<?php echo get_template_directory_uri(); ?>/images/table.jpg') center center/cover no-repeat;"></div>
-                <table class="services-table" style="width:100%;border-collapse:collapse;background:rgba(24,24,24,0.92);color:#fff;position:relative;z-index:1;">
-                    <thead>
-                        <tr style="background:#222;">
-                            <th style="padding:10px 8px;text-align:center;">Paslauga</th>
-                            <th style="padding:10px 8px;text-align:center;">Mažas auto</th>
-                            <th style="padding:10px 8px;text-align:center;">Vidutinis auto</th>
-                            <th style="padding:10px 8px;text-align:center;">Didelis auto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td style="text-align:left;"><b>🔥 1 Etapo poliravimas</b></td><td style="text-align:center;">100€</td><td style="text-align:center;">120€</td><td style="text-align:center;">140€</td></tr>
-                        <tr><td style="text-align:left;"><b>🔥 2 Etapų poliravimas</b></td><td style="text-align:center;">150€</td><td style="text-align:center;">180€</td><td style="text-align:center;">210€</td></tr>
-                        <tr><td style="text-align:left;"><b>🔥 3 Etapų poliravimas</b></td><td style="text-align:center;">250€</td><td style="text-align:center;">300€</td><td style="text-align:center;">350€</td></tr>
-                        <tr><td style="text-align:left;">Detalės šlifavimas</td><td colspan="3" style="text-align:center;">30-50€</td></tr>
-                        <tr><td style="text-align:left;"><b>⭐ Keraminė danga iki 12mėn</b></td><td colspan="3" style="text-align:center;">80-100€</td></tr>
-                        <tr><td style="text-align:left;"><b>⭐ Keraminė danga iki 36mėn</b></td><td colspan="3" style="text-align:center;">140-160€</td></tr>
-                        <tr><td style="text-align:left;"><b>⭐ Nano danga stiklams</b></td><td colspan="3" style="text-align:center;">30€</td></tr>
-                        <tr><td style="text-align:left;"><b>🧽 Cheminis salono valymas</b></td><td colspan="3" style="text-align:center;">100-200€</td></tr>
-                        <tr><td style="text-align:left;"><b>🧽 Sausas salono valymas</b></td><td colspan="3" style="text-align:center;">50€</td></tr>
-                        <tr><td style="text-align:left;"><b>🧽 Vaikiškos kėdutės valymas</b></td><td colspan="3" style="text-align:center;">20€</td></tr>
-                        <tr><td style="text-align:left;"><b>🧽 Lubų valymas</b></td><td colspan="3" style="text-align:center;">Papildoma paslauga, kaina derinama individualiai</td></tr>
-                    </tbody>
-                </table>
+            <!-- Poliravimas Services -->
+            <div class="services-category" style="margin-bottom:48px;">
+                <h3 style="color:#ffb347;font-size:1.8rem;margin-bottom:24px;text-align:center;border-bottom:2px solid #ffb347;padding-bottom:8px;">🔥 Poliravimas</h3>
+                <div class="services-table-wrapper" style="position:relative;">
+                    <div style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.6;background:url('<?php echo get_template_directory_uri(); ?>/images/table.jpg') center center/cover no-repeat;"></div>
+                    <table class="services-table" style="width:100%;border-collapse:collapse;background:rgba(24,24,24,0.75);color:#fff;position:relative;z-index:1;">
+                        <thead>
+                            <tr style="background:#222;">
+                                <th style="padding:10px 8px;text-align:center;">Paslauga</th>
+                                <th style="padding:10px 8px;text-align:center;">Mažas auto</th>
+                                <th style="padding:10px 8px;text-align:center;">Vidutinis auto</th>
+                                <th style="padding:10px 8px;text-align:center;">Didelis auto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td style="text-align:left;"><b>1 Etapo poliravimas</b></td><td style="text-align:center;">100€</td><td style="text-align:center;">120€</td><td style="text-align:center;">140€</td></tr>
+                            <tr><td style="text-align:left;"><b>2 Etapų poliravimas</b></td><td style="text-align:center;">150€</td><td style="text-align:center;">180€</td><td style="text-align:center;">210€</td></tr>
+                            <tr><td style="text-align:left;"><b>3 Etapų poliravimas</b></td><td style="text-align:center;">250€</td><td style="text-align:center;">300€</td><td style="text-align:center;">350€</td></tr>
+                            <tr><td style="text-align:left;">Detalės šlifavimas</td><td colspan="3" style="text-align:center;">30-50€</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Keraminė / Nano danga Services -->
+            <div class="services-category" style="margin-bottom:48px;">
+                <h3 style="color:#ffb347;font-size:1.8rem;margin-bottom:24px;text-align:center;border-bottom:2px solid #ffb347;padding-bottom:8px;">⭐ Keraminė / Nano danga</h3>
+                <div class="services-table-wrapper" style="position:relative;">
+                    <div style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.6;background:url('<?php echo get_template_directory_uri(); ?>/images/table.jpg') center center/cover no-repeat;"></div>
+                    <table class="services-table" style="width:100%;border-collapse:collapse;background:rgba(24,24,24,0.75);color:#fff;position:relative;z-index:1;">
+                        <thead>
+                            <tr style="background:#222;">
+                                <th style="padding:10px 8px;text-align:center;">Paslauga</th>
+                                <th style="padding:10px 8px;text-align:center;" colspan="3">Kaina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td style="text-align:left;"><b>Keraminė danga iki 12mėn</b></td><td colspan="3" style="text-align:center;">80-100€</td></tr>
+                            <tr><td style="text-align:left;"><b>Keraminė danga iki 36mėn</b></td><td colspan="3" style="text-align:center;">140-160€</td></tr>
+                            <tr><td style="text-align:left;"><b>Nano danga stiklams</b></td><td colspan="3" style="text-align:center;">30€</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Valymas Services -->
+            <div class="services-category" style="margin-bottom:48px;">
+                <h3 style="color:#ffb347;font-size:1.8rem;margin-bottom:24px;text-align:center;border-bottom:2px solid #ffb347;padding-bottom:8px;">🧽 Valymas</h3>
+                <div class="services-table-wrapper" style="position:relative;">
+                    <div style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.6;background:url('<?php echo get_template_directory_uri(); ?>/images/table.jpg') center center/cover no-repeat;"></div>
+                    <table class="services-table" style="width:100%;border-collapse:collapse;background:rgba(24,24,24,0.75);color:#fff;position:relative;z-index:1;">
+                        <thead>
+                            <tr style="background:#222;">
+                                <th style="padding:10px 8px;text-align:center;">Paslauga</th>
+                                <th style="padding:10px 8px;text-align:center;" colspan="3">Kaina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td style="text-align:left;"><b>Cheminis salono valymas</b></td><td colspan="3" style="text-align:center;">100-200€</td></tr>
+                            <tr><td style="text-align:left;"><b>Sausas salono valymas</b></td><td colspan="3" style="text-align:center;">50€</td></tr>
+                            <tr><td style="text-align:left;"><b>Vaikiškos kėdutės valymas</b></td><td colspan="3" style="text-align:center;">20€</td></tr>
+                            <tr><td style="text-align:left;"><b>Lubų valymas</b></td><td colspan="3" style="text-align:center;">Papildoma paslauga, kaina derinama individualiai</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="special-offer" style="margin:32px 0 0 0;padding:18px 24px;background:#222;border-left:4px solid #ffb347;border-radius:8px;color:#fff;font-size:1.15rem;font-weight:500;">
                 <span style="color:#ffb347;font-weight:700;">Specialus pasiūlymas:</span> Vieno etapo poliravimas + keraminė danga tik <span style="color:#ffb347;font-weight:700;">165€</span>
